@@ -1,0 +1,197 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(32, 110, 77, 0) !important;
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+    outline: none !important;
+}
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(255, 147, 114, 0.705);
+}
+
+label {
+    font-weight: 600;
+}
+
+/* Heading */
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffa397;
+}
+
+/* Input Field */
+input {
+    width: 250px;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    border: 2px solid #b17169;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+    color: white;
+    outline: none;
+    transition: border 0.3s;
+}
+
+
+
+input:focus {
+    border-color: #ff416c;
+}
+input:hover{
+    background-color: rgb(54, 54, 54);
+}
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#analyze-button {
+    background: linear-gradient(135deg, #ff416c, #f5a272);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.5s ease, transform 0.2s ease;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
+}
+
+/* Hover Animation */
+#analyze-button:hover {
+    background: linear-gradient(135deg, #f5a272, #ff416c);
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(255, 65, 108, 0.5);
+}
+
+/* Click Effect */
+#analyze-button:active {
+    transform: scale(0.96);
+    box-shadow: 0 3px 10px rgba(252, 96, 132, 0.3);
+}
+
+#analyze-again {
+    background: linear-gradient(135deg, #ff416c, #f5a272);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.5s ease, transform 0.2s ease;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(248, 128, 156, 0.3);
+}
+
+#analyze-again:hover {
+    background: linear-gradient(135deg, #f5a272, #ff416c);
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(255, 129, 159, 0.5);
+}
+
+/* Result Display */
+#result {
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* Fake News - Red */
+.fake {
+    color: #ff5454;
+}
+
+/* Real News - Green */
+.real {
+    color: #86d48d;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) and (min-width: 400px) {
+    .container {
+        width: 300px;
+        /* height: 0px; */
+        background-color: #1e1e1e;
+    }
+    input{
+    margin-top: 15px;
+    width: 220px;
+    }
+    input, button {
+        font-size: 14px;
+    }
+    #analyze-button{
+        margin-top: 20px;
+        padding: 12px 18px;
+    }
+}
+@media (max-width: 400px) and (min-width:330px){
+    .container {
+        width: 250px;
+        height: 250px;
+        background-color: #1e1e1e;
+    }
+input{
+    margin-top: 15px;
+    width: 200px;
+    height: 10px;
+}
+    input, button {
+        font-size: 14px;
+    }
+    #analyze-button{
+        margin-top: 20px;
+        padding: 10px 18px;
+    }
+}
+@media  (max-width:330px){
+    .container {
+        height: 250px;
+        transform: scale(0.8);
+    }
+input{
+    margin-top: 15px;
+    width: 200px;
+    height: 10px;
+}
+    input, button {
+        font-size: 14px;
+    }
+    #analyze-button{
+        margin-top: 20px;
+        padding: 10px 18px;
+    }
+}
+
+
